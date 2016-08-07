@@ -66,7 +66,8 @@ public class RouteCalculationResult {
 		if(waypoints != null) {
 			this.locationPoints.addAll(waypoints);
 		}
-		boolean addMissingTurns = true;
+//		boolean addMissingTurns = true;
+		boolean addMissingTurns = false;
 		if(addMissingTurns) {
 			removeUnnecessaryGoAhead(localDirections);
 			addMissingTurnsToRoute(locations, localDirections, params.start,params.end, 
